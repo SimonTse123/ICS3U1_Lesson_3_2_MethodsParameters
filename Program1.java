@@ -1,25 +1,25 @@
 class Program1 extends ConsoleProgram {
 
    /**
-  * Description
-  * @author:
+  * Saying happy birthday to anyone
+  * @author: Simon
   */
   
   public void run(){
-    System.out.println("Happy Birthday to you!");
-    System.out.println("Happy Birthday to you!");
-    System.out.println("Happy birthday, dear Fred!");
-    System.out.println("Happy Birthday to you!");
+    String sreCelebrant;
+    sreCelebrant = readLine("Whose birthday is it today?");
+    happy();
+    happy();
+    dear(sreCelebrant);
+    happy();
 }
 
-  /**
-   * Say the happy birthday line
-   */
- 
+  private void happy(){
+    System.out.println("Happy Birthday to you!");
+  }
 
-  /**
-  * output happy birthday to a specified name
-  * @param name - The name of the person to sing to
-  */
+  private void dear(String strName){
+    System.out.println("Happy Birthday dear " + strName + "!");
+  }
 
 }
